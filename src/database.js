@@ -61,7 +61,7 @@ export class Database {
     if (rowIndex > -1) {
       const data = this.#database[table][rowIndex];
       data.complete_at = new Date();
-      console.log(data);
+
       this.#database[table][rowIndex] = data;
       this.#persist;
     }
